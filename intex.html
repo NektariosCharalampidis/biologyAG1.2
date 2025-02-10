@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Βιολογία Α' Γυμνασίου - Ενότητα 1.2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Βιολογία Α' Γυμνασίου - Ενότητα 1.2</h1>
+        <div id="theory">
+            <h2>Θεωρία</h2>
+            <p>Η κυτταρική θεωρία αναφέρει ότι όλα τα ζωντανά όντα αποτελούνται από κύτταρα...</p>
+            <button onclick="startQuiz()">Συνέχεια στο Τεστ</button>
+        </div>
+
+        <div id="quiz" style="display:none;">
+            <h2>Τεστ Κατανόησης</h2>
+            <form id="quizForm"></form>
+            <button onclick="checkAnswers()">Υποβολή</button>
+        </div>
+
+        <div id="result" style="display:none;">
+            <h2>Αποτελέσματα</h2>
+            <p id="score"></p>
+            <p id="feedback"></p>
+            <button onclick="retryQuiz()">Ξανά προσπάθεια</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
